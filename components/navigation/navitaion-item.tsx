@@ -27,7 +27,7 @@ export const NavigationItem = ({ id, imageUrl, name }: NavigationItemProps) => {
             label={name}>
             <button
                 onClick={() => {
-                    onClick;
+                    onClick();
                 }}
                 className="relative flex items-center group">
                 <div
