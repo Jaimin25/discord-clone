@@ -6,9 +6,10 @@ import { db } from "@/lib/db";
 import { currentProfile } from "@/lib/current-profile";
 
 import { NavigationAction } from "./navigation-action";
-import { NavigationItem } from "./navitaion-item";
+import { NavigationItem } from "./navigaion-item";
 import { ModeToggle } from "@/components/mode_toggle";
 import { UserButton } from "@clerk/nextjs";
+import { useEffect } from "react";
 
 export const NavigationSidebar = async () => {
     const profile = await currentProfile();
