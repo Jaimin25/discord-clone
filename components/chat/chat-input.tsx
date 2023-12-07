@@ -52,12 +52,11 @@ export const ChatInput = ({ apiUrl, query, name, type }: ChatInputProps) => {
         }
     };
 
-    console.log(isLoading);
-
     return (
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)}>
                 <FormField
+                    disabled={isLoading}
                     control={form.control}
                     name="content"
                     render={({ field }) => (
