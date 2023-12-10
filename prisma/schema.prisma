@@ -97,7 +97,7 @@ model Channel {
 }
 
 model Message {
-  is      String @id @default(uuid())
+  id      String @id @default(uuid())
   content String @db.String
 
   fileUrl String? @db.String
